@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+
+        <header style="background-color: mediumpurple">
+            <h1>Welcome to Bro Code</h1>
+            <a href="index.html">Home</a>
+            <a href="">About Us</a>
+            <a href="form.html">Products</a>
+            <a href="">Contact Us</a>
+        </header>
+
+        <br>
+        <main>
+
+            <!-- action sends data to the specified location 
+                - GET for insensitive data
+                - POST for sensitive data
+
+                for large files, use encryption="multipart/form-data.
+            -->
+            <form action="index.php" method="POST" encryption="multipart/form-data">
+
+                <!-- for moves the cursor to the relevant text box when a label is clicked on
+                    - id must match the for  
+                -->
+                <label for="username">Username: </label>
+                <input type="text" id="username" placeholder="YaBoi" minlenght="6" maxlenght="18" required>
+
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" placeholder="********" minlength="8" maxlenght="32" required>
+
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="name@domain.com" minlength="6" required>
+
+                <br>
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" placeholder="+447000 000000" minlength="8" pattern="+[0-9]{4} [0-9]{6}">
+
+                <br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob">
+
+                <br>
+                <label for="quantity">Quantity: </label>
+                <!-- value is the default value -->
+                <input type="number" id="quantity" min="0" max="999" value="1">
+
+                <br>
+                <!-- To ensure only one button in a group can be selected, they must have the
+                same name -->
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." value="Mr." name="title">
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." value="Mrs." name="title">
+                <label for="Miss.">Miss.</label>
+                <input type="radio" id="Miss." value="Miss." name="title">
+
+                <br>
+                <label for="payment">Payment: </label>
+                <select id="payment">
+                    <option value="">--</option>
+                    <option value="creditcard">Credit Card</option>
+                    <option value="debitcard">Debit Card</option>
+                    <option value="giftcard">Gift Card</option>
+                </select>
+
+                <br>
+                <label for="comment">Additional Details: </label>
+                <textarea id="comment"></textarea>
+
+                <br>
+                <label for="file">File: </label>
+                <input type="file" id="file" accept="image/png, image/jpeg">
+    
+                <br>
+                <label for="terms">Accept terms and conditions: </label>
+                <input type="checkbox" id="terms">
+
+                <br>
+                <input type="submit"> <br>
+                <input type="reset">
+            </form>
+        </main>
+
+        <footer style="background-color: mediumpurple">
+            <hr>
+            Author: Alex<br>
+            &copy; Copyright reserved<br>
+            <a href="mailto:fake@fake.com">BroCode@fake.com</a>
+        </footer>
+    </body>
+</html>

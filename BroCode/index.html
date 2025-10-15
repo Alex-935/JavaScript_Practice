@@ -2,62 +2,185 @@
 
 <html>
     <head>
+        <link rel="icon" type="image/png" href="images/favicon re3.png"><!-- favicon is the picture on the left side of the tab-->
         <title>My Website With Dragons and Lasers</title>
     </head>
     <body>
-        <h1>A Website</h1>
-        <h2>H2 heading</h2>
-        <h3>H3 heading</h3>
-        <h4>h4 heading</h4>
-        <h5>h5 heading</h5>
-        <hr> <!-- horizontal rule / line across page -->
 
-        <p>Have you ever heard the tragedy of Darth Plagueis the wise?
+        <header style="background-color: mediumpurple">
+            <h1>Welcome to Bro Code</h1>
+            <a href="index.html">Home</a>
+            <a href="">About Us</a>
+            <a href="form.html">Products</a>
+            <a href="">Contact Us</a>
+        </header>
+
+        <main>
+            <h1>A Website</h1>
+            <h2>H2 heading</h2>
+            <h3>H3 heading</h3>
+            <h4>h4 heading</h4>
+            <h5>h5 heading</h5>
+            <hr> <!-- horizontal rule / line across page -->
+
+            <p>Have you ever heard the tragedy of Darth Plagueis the wise?
+                <br>
+                I thought not, it's not a story the Jedi would tell you.
+            </p>
+
+            <!--
+            <pre> is for preformated texts. Its a <p> tags that keeps any formatting such as paragraphs
+            -->
+            <pre>
+                <u>Did you ever hear the tragedy of Darth Plagueis The Wise? </u>
+                <i>I thought not.</i> It's not a story the Jedi would tell you. 
+                <b>It's a Sith legend. </b>
+                
+                Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… 
+                He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. 
+                The dark side of the Force is a pathway to many abilities some consider to be unnatural. 
+                He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. 
+                Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. 
+                <del>Ironic.</del>
+                <small>He could save others from death</small>, <big>but not himself.</big>
+
+                2<sub>n</sub><sup>3</sup>
+                This is <tt>Monoscript</tt> text
+                <mark style="background-color: lightblue">highlight effect</mark>
+            </pre>
+
+            <!-- anchor tag / hyperlink
+                - target is optional, if set to _blank, it will open the href in a new tab/window 
+            -->
+            <a href="https://www.google.co.uk/" target="_blank" title="Adds tooltip">
+                click me
+            </a>
+
             <br>
-            I thought not, it's not a story the Jedi would tell you.
-        </p>
 
-        <!--
-         <pre> is for preformated texts. Its a <p> tags that keeps any formatting such as paragraphs
-        -->
-        <pre>
-            Did you ever hear the tragedy of Darth Plagueis The Wise? 
-            I thought not. It's not a story the Jedi would tell you. 
-            It's a Sith legend. 
+            <a href="mailto:fake123@fake.com">
+                Email Hyperlink
+            </a>
+
+            <br>
+            <br>
+
+            <a href="https://vocaloid.fandom.com/wiki/Hatsune_Miku" target="_blank">
+                <!-- alt is displayed if the image cannot be loaded
+                    - alt will also be read out by a text reader even if the image displays -->
+                <img src="images/Miku Peace Sign.png" alt="A picture of Miku" height="500">
+            </a>
+
+            <!-- GIFs are added the same way as images-->
+            <img src="images/RacerDrake.gif" alt="Drake Gif">
+
+            <!-- controls gives a play bar-->
+            <audio controls>
+                <source src="images/08 The Call Of Ktulu.m4a">
+            </audio>
+
+            <!-- <audio autoplay> -->
+            <audio controls autoplay muted loop>
+                <source src="images/1-08 To Live Is To Die.m4a"><!--Chrome doesnt like type="m4a"-->
+                <source src="images/07 Orion.m4a">      
+            </audio>
+            <!-- Can be used to play a backup audio format or clip    mp3 is type="audio/mpeg"-->
+                <!--<source src="images/07 Orion.m4a" type="audio/x-m4a">-->
+
+            <br>
+                                                            <!--muted-->
+            <video src="images/Uno.mp4" width="500" controls autoplay muted loop>
+                <!-- <source src="images/Uno.mp4" type="vidoe/mp4"> use this instead for having backups --> 
+            </video>
+            <br>
+
+
+            <!-- <span> inline container to group elements for styling purposes -->
+            <!-- <div> (division) block container to group elements for styling purposes -->
             
-            Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… 
-            He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. 
-            The dark side of the Force is a pathway to many abilities some consider to be unnatural. 
-            He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. 
-            Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. 
-            Ironic. 
-            He could save others from death, but not himself.
-        </pre>
+            <h1><span style="background-color: rgb(153, 81, 81);">Span Text</span></h1>
+            <h1><div style="background-color: aqua">Div Text</div></h1><!-- takes width of area -->
 
-        <!-- anchor tag / hyperlink
-            - target is optional, if set to _blank, it will open the href in a new tab/window 
-        -->
-        <a href="https://www.google.co.uk/" target="_blank" title="Adds tooltip">
-            click me
-        </a>
 
-        <br>
+            <!-- Unordered Lists -->
+            <br>
+            <h4>RE4 Characters</h4>
+            <ul>
+                <li>Leon S. Kennedy</li>
+                <li>Ada Wong</li>
+                <li>Luis Serra Navarro</li>
+                <li>Ashley Graham</li>
+                <li>Enemies</li>
+                <ul>
+                    <li>Ramon Salazar</li>
+                    <li>Bitores Mendez</li>
+                    <li>Osmund Saddler</li>
+                </ul>
+            </ul>
 
-        <a href="mailto:fake123@fake.com">
-            Email Hyperlink
-        </a>
 
-        <br>
-        <br>
+            <!-- Ordered Lists -->
+                <ol>
+                    <li>Kill 'Em All</li>
+                    <li>Ride The Lightning</li>
+                    <li>Master of Puppets</li>
+                    <li>...And Justice For All</li>
+                    <li>The Black Album</li>
+                    <li>Load</li>
+                    <li>Reload</li>
+                    <li>Garage Inc.</li>
+                    <li>St. Anger</li>
+                    <li>Death Magnetic</li>
+                    <li>Hardwired... To Self Destruct</li>
+                    <li>72 Seasons</li>
+                </ol>
 
-        <a href="https://vocaloid.fandom.com/wiki/Hatsune_Miku" target="_blank">
-            <!-- alt is displayed if the image cannot be loaded
-                - alt will also be read out by a text reader even if the image displays -->
-            <img src="images/Miku Peace Sign.png" alt="A picture of Miku" height="500">
-        </a>
+            <!-- Description List -->
+            <dl style="background-color: lightgray; border:2px solid; padding: 5px;">
+                <dt>Dragon</dt>
+                <dd>Flying Winged Scaled Beast with elemental projectile breath.</dd>
+                <dt>Phoenix</dt>
+                <dd>Immortal bird of flame</dd>
+            </dl>
 
-        <!-- GIFs are added the same way as images-->
-        <img src="images/RacerDrake.gif" alt="Drake Gif">
+            <br>
+            <h3>Store House</h3>
+
+            <table border="1" style="padding: 3px; background-color: black;">
+                <tr align="center" style="background-color: aqua">
+                    <th width="100">Sunday</th>
+                    <th width="100">Monday</th>
+                    <th width="100">Tuesday</th>
+                    <th width="100">Wednesday</th>
+                    <th width="100">Thursday</th>
+                    <th width="100">Friday</th>
+                    <th width="100">Saturday</th>
+                </tr>
+                <tr align="center" style="background-color: aliceblue">
+                    <td width="100">Closed</td>
+                    <th width="100">9-5</th>
+                    <th width="100">9-5</th>
+                    <th width="100">9-5</th>
+                    <th width="100">9-5</th>
+                    <th width="100">9-5</th>
+                    <th width="100">10-2</th>
+                </tr>
+            </table>
+
+            <br>
+            <a href="index.html" target="_blank">
+                <button style="font-size: 15px; padding:10px; background-color: lightblue; border-radius: 20px;">
+                    click me
+                </button>
+            </a>
+        </main>
+
+        <footer style="background-color: mediumpurple">
+            <hr>
+            Author: Alex<br>
+            &copy; Copyright reserved<br>
+            <a href="mailto:fake@fake.com">BroCode@fake.com</a>
+        </footer>
 
     </body>
 </html>
