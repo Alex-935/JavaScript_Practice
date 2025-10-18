@@ -1,0 +1,66 @@
+header {
+    background-color: mediumpurple;
+}
+
+.float {
+    border: 3px solid black;
+    display: flow-root;
+}
+
+.imgBall {
+    float: left;
+    margin-right: 10px;
+}
+
+#img2 {
+    float: right;
+    margin-left: 10px;
+}
+
+p {
+    color: black;
+}
+
+.overflow {
+    border: 2px solid;
+    width: 250px;
+    height: 75px;
+    overflow: auto;
+}
+
+#myDiv {
+    background-color: lightgreen;
+}
+#mySpan {
+    background-color: orange;
+}
+#myDiv2 {
+    background-color: lightgreen;
+    display: inline;
+}
+#mySpan2 {
+    background-color: orange;
+    display: block;
+}
+#myDiv3 {
+    background-color: lightgreen;
+    display: inline-block;
+    width: 500px;
+}
+#mySpan3 {
+    background-color: orange;
+    display: inline-block;
+    width: 500px;
+}
+#myDiv4 {
+    background-color: lightgreen;
+    display: inline-block;
+    visibility: hidden;
+    width: 500px;
+}
+#mySpan4 {
+    background-color: orange;
+    display: none;
+    width: 500px;
+}
+

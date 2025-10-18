@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Float Page</title>
+        <link rel="stylesheet" href="float.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>About Us</h1>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="form.html">Products</a>
+            <a hre="">Contact Us</a>
+            <a href="float.html">Float Page</a>
+        </header>
+        <br>
+
+        <div class="float">
+            <!-- float allows other elements to flow around it -->
+            <img src="images/Poke_Ball.png" height="150px" id="img1" class="imgBall">
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, et culpa fugit aspernatur labore libero? Delectus cum est accusamus vero iusto at porro voluptatum perferendis? Itaque eos aperiam cupiditate possimus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, et culpa fugit aspernatur labore libero? Delectus cum est accusamus vero iusto at porro voluptatum perferendis? Itaque eos aperiam cupiditate possimus.</p>
+            <img src="images/Rayquaza.png" height="150px" id="img2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, et culpa fugit aspernatur labore libero? Delectus cum est accusamus vero iusto at porro voluptatum perferendis? Itaque eos aperiam cupiditate possimus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, et culpa fugit aspernatur labore libero? Delectus cum est accusamus vero iusto at porro voluptatum perferendis? Itaque eos aperiam cupiditate possimus.</p>
+        </div>
+        
+        <br>
+        <div class="overflow">
+
+            <!-- overflow:
+                    property that sets the desired behavior when content does not
+                    fit inside parent element box
+
+                    overflow: visible  - show overflowing content
+                    overflow: hidden   - overflowing content is not shown but can still be interacted with
+                    overflow: clip     - used with pverflow-clip-margin: 10px; to set how much overflow is visible, the rest is hidden
+                    overflow: scroll   - the box is given a vertical/horizontal scroll bar
+                    overflow: auto     - scroll bar will be shown but only is needed
+            -->
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ut nemo nobis quae aliquid ex, in omnis, optio sapiente pariatur repellendus modi ipsa, quas officia! Quo aut nesciunt placeat amet!</p>
+        </div>
+
+        <br>
+        
+        <div class="display">
+
+            <!--
+                display = property specifies if/how an element is displayed
+
+                block-level = start on a new line, take up the full width available
+                              (h1, div, p, form, header, footer)
+
+                inline = do not start on a new line, width is limited to what is needed
+                         (span, a, img)
+
+                inline-block acts inline but allows you to set dimensions like with a block
+
+                block also allows visibility: hidden;
+                this allows a block to take up space but not be visible
+
+                display: none; acts as though the element doesnt exist
+            -->
+
+            <div id="myDiv">My Div</div>
+            <span id="mySpan">My Span</span>
+            <div id="myDiv2">My Div 2</div>
+            <span id="mySpan2">My Span 2</span>
+            <div id="myDiv3">My Div 3</div>
+            <span id="mySpan3">My Span 3</span>
+            <div id="myDiv4">My Div 4</div>
+            <span id="mySpan4">My Span 4</span>
+            <div id="myDiv2">Another Div</div>
+        </div>
+    
+    </body>
+</html>
