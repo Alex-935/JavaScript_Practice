@@ -1,6 +1,9 @@
 header {
     background-color: mediumpurple;
 }
+footer {
+    background-color: mediumpurple;
+}
 
 .float {
     border: 3px solid black;

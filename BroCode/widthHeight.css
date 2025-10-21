@@ -1,0 +1,27 @@
+header {
+    background-color: mediumpurple;
+}
+footer {
+    background-color: mediumpurple;
+}
+main {
+    background-color: white;
+}
+
+.container{
+    background-color: grey;
+    height: 100vh;/* veiwport height- height of visible page */
+}
+
+.box{
+    background-color: white;
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box; /* means any borders and padding are included when determining size / not added on top of that size
+    height: auto; /* default */
+    width: 75%;
+    float: left;
+    text-align: center;
+    max-width: 50%;
+    min-height: 65%;
+}
