@@ -1,0 +1,39 @@
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(25, 210, 235);
+    position: relative;/* moved in relation to where it would normally be*/
+    top: 100px;
+    left: 100px;
+    text-align: center;
+}
+
+#box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 49, 25);
+    position: relative;/* moved in relation to where it would normally be*/
+    top: 30px;
+    left: 50px;
+    text-align: center;
+}
+
+
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(228, 136, 16);
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    text-align: center;
+}
+
+#box4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(25, 235, 77);
+    position: sticky;/* moved in relation to where it would normally be*/
+    left: 700px;
+    text-align: center;
+}
