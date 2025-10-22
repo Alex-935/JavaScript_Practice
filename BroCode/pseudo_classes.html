@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/icon" href="images/favicon re3.png">
+        <title>Psuedo-Classes</title>
+        <style>
+            a:link{
+                color: lightblue;
+            }
+            a:hover{
+                color: red;
+                font-size: 1.1em;
+            }
+            a:active{
+                color: lightpink;
+                font-size: 1.1em;
+            }
+            a:visited{
+                color: lightgray;
+            }
+
+            li:not(:hover){
+                background-color: lightgray;
+            }
+            li:nth-child(odd){
+                background-color: lightblue;
+            }
+            li:nth-child(2n){
+                background-color: lightgreen;
+            }
+            li:nth-child(4){
+                background-color: lightcoral;
+            }
+            li:nth-child(6n+2){
+                background-color: rgb(101, 52, 235);
+            }
+            li:hover{
+                background-color: yellow;
+            }
+
+            #greeting p{
+                background-color: lightblue;
+                padding: 10px;
+                display: none;
+            }
+            #greeting:hover p{
+                display: block;
+            }
+
+            #fruit li{
+                background-color: white;
+            }
+
+            h1::first-letter{
+                font-size: 2em;
+                font-style: italic;
+            }
+            p::first-line{
+                background-color: lightgray;
+            }
+            p::selection{/* highlighted by mouse */
+                color: red;
+                background-color: black;
+            }
+            #fruit li::before{
+                content: "✅";
+            }
+            #apple::after{
+                content: "🍎";
+            }
+            #orange::after{
+                content: "🍊";
+            }
+            #banana::after{
+                content: "🍌";
+            }
+            #fruit li::marker{
+                content: "✔️";
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: mediumpurple">
+            <h1>Welcome to Bro Code</h1>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="form.html">Products</a>
+            <a href="">Contact Us</a>
+            <a href="float.html">Float Page</a>
+            <a href="widthHeight.html">Width & Height</a>
+            <a href="position.html">Position</a>
+            <a href="combinators.html">Combinators</a>
+            <a href="pseudo_classes.html">Pseudo-Classes</a>
+        </header>
+        <br>
+
+        <main>
+            <!--
+            Pseudo-classes are key words added to css, such as :hover
+            -->
+
+            <a href="https://www.google.co.uk/">Google</a>
+
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+                <li>Item 7</li>
+                <li>Item 8</li>
+                <li>Item 9</li>
+                <li>Item 10</li>
+            </ul>
+
+            <div id="greeting">Hover Here
+                <p>Hello</p>
+            </div>
+
+            <!-- 
+                Pseudo-elements = keywords added after a selector thats used to style 
+                                    specific parts of an element 
+
+                    selector::pseudo-element
+                    h1::first-letter
+            -->
+
+            <h1>Hello</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorem dolor nam tempora distinctio eveniet omnis facere vel quas! Libero, ipsum modi! Facere, autem deleniti. Alias temporibus cum rem. Molestiae?</p>
+
+            <ul id="fruit">
+                <li id="apple">apple</li>
+                <li id="orange">orange</li>
+                <li id="banana">banana</li>
+            </ul>
+        </main>
+        <br>
+
+        <footer style="background-color: mediumpurple">
+            <hr>
+            Author: Alex<br>
+            &copy; Copyright reserved<br>
+            <a href="mailto:fake@fake.com">BroCode@fake.com</a>
+        </footer>
+    </body>
+</html>
