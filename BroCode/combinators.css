@@ -1,0 +1,36 @@
+#container {
+    border: 2px solid;
+}
+#container p{
+    background-color: yellow;
+}
+
+#container2 {
+    border: 2px solid;
+}
+#container2 > p{/* p3 is not a child as it isnt directly in the div, but wrapped in another div
+    the other div is a child but the p3 is only a decendent.  All children are decendents*/
+    background-color: yellow;
+}
+
+#container3 {
+    border: 2px solid;
+}
+#container3 ~ p{/* both are on the same level, children of main */
+    background-color: yellow;
+}
+
+
+#container4 {
+    border: 2px solid;
+}
+#container4 ~ p { /* undoes effect of #container3 ~ p {} */
+    background-color: white;
+}
+#container4 + p{ /* next direct sibling */
+    background-color: yellow;
+}
+
+#container5 {
+    border: 2px solid;
+}
