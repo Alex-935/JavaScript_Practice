@@ -2,25 +2,41 @@
 <html>
     <head>
         <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Pagination</title>
+        <title>Drop-Down Menu</title>
         <style>
-            .pagination{
-                text-align: center;
+            .dropdown {
+                display: inline-block;/* means the block only takes up enough space and not 
+                                        the whole width like a block level element */
             }
-            .pagination a{
+            .dropdown button{
+                background-color: rgb(202, 191, 191);
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                cursor: pointer;
+                min-width: 100px;
+            }
+            .dropdown a {
+                display: block;
                 color: black;
                 text-decoration: none;
-                padding: 8px;
-                display: inline-block;
+                padding: 10px 15px;
             }
-            .pagination a.active{
-                background-color: lightgreen;
-                font-weight: bold;
-                border-radius: 5px;
+            .dropdown .content {
+                display: none;
+                position: absolute;
+                background-color: rgb(236, 227, 227);
+                min-width: 100px;
+                box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8)
             }
-            .pagination a:hover:not(.active) {
-                background-color: lightgray;
-                border-radius: 5px;
+            .dropdown:hover .content{
+                display: block;
+            }
+            .dropdown:hover button {
+                background-color: darkgray;
+            }
+            .dropdown a:hover {
+                background-color: hsla(0, 5%, 83%, 0.8);
             }
         </style>
     </head>
@@ -48,22 +64,16 @@
         <br>
 
         <main>
-
-            <!-- pagination = method by which a document is seperated into pages
-                                and numbers are given -->
-
-            <h1>This is Page 2</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic nostrum consequuntur, repudiandae temporibus fugiat esse laborum, saepe quod amet perferendis veritatis eius! Nesciunt, rerum enim neque officiis dolorum in.</p>
-        
-            <div class="pagination">
-                <a href="pagination.html"><</a>
-                <a href="pagination.html">1</a>
-                <a href="pagination2.html" class="active">2</a>
-                <a href="pagintation3.html">3</a>
-                <a href="pagination4.html">4</a>
-                <a href="pagination5.html">5</a>
-                <a href="pagination3.html">></a>
+            <div class="dropdown">
+                <button>Food</button>
+                <div class="content">
+                    <a href="">Apple</a>
+                    <a href="">Orange</a>
+                    <a href="">Banana</a>
+                </div>
             </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis fugit numquam assumenda, temporibus similique nemo deleniti in ratione distinctio, obcaecati quos. Doloribus repellat quae incidunt veniam nisi sunt sequi?</p>
         </main>
         <br>
 

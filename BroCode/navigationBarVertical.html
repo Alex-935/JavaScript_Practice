@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Width & Height</title>
-        <link rel="stylesheet" href="widthHeight.css">
+        <link ref="icon" type="image/png" href="images/favicon re3.png">
+        <title>Navigation Bar</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            .navbar ul {
+                list-style-type: none;/* removes bullet points*/
+                background-color: rgb(46, 43, 43);
+                padding: 0px;
+                margin: 0px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .navbar a:hover{
+                background-color: rgba(185, 64, 64, 0.2);
+            }
+            
+        </style>
     </head>
-
     <body>
         <header>
             <h1>Welcome to Bro Code</h1>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
             <a href="index.html">Home</a>
             <a href="aboutUs.html">About Us</a>
             <a href="form.html">Products</a>
@@ -23,29 +54,17 @@
             <a href="navigationBar.html">Navigation Bar</a>
             <a href="websiteLayout.html">Website Layout</a>
             <a href="imageGallery.html">Image Gallery</a>
-            <a href="icons.html">icons</a>
+            <a href="icons.html">Icons</a>
             <a href="flexbox.html">Flexbox</a>
             <a href="transformations.html">Transformations</a>
-            <br>
+            <hr>
         </header>
 
         <main>
-            <br>
-            <div class="container">
-                <div class="box">
-                    <h2>This is #1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste architecto voluptates sed veritatis, similique velit facilis, itaque consequuntur quisquam recusandae reiciendis reprehenderit consectetur illum, tenetur laudantium. Eligendi, magni at.</p>
-                </div>
-                <div class="box">
-                    <h2>This is #2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste architecto voluptates sed veritatis, similique velit facilis, itaque consequuntur quisquam recusandae reiciendis reprehenderit consectetur illum, tenetur laudantium. Eligendi, magni at.</p>
-                </div>
-            </div>
-            
-            <br>
+            <h3>This is the home page</h3>
         </main>
 
-        <footer>
+        <footer style="background-color: mediumpurple">
             <hr>
             Author: Alex<br>
             &copy; Copyright reserved<br>

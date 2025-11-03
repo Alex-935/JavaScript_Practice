@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/favicon re3.png">
+        <title>Semantic Tags</title>
+        <style>
+            * {/* applies to all elements */
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0px;
+            }
+            header {
+                background-color: lightgray;
+                padding: 25px;
+            }
+            .navbar {
+                background-color: darkgray;
+                height: 50px;
+            }
+            aside {
+                width: 20%;
+                float: left;
+                padding: 10px;
+            }
+            section {
+                width: 40%;
+                float: left;
+                padding: 10px;
+            }
+            article {
+                width: 40%;
+                float: left;
+                padding: 10px;
+            }
+            footer {
+                display: block;
+                clear: both;/* clears float so it appears at bottom*/
+                background-color: lightgray;
+                padding: 25px;
+            }
+            @media screen and (max-width:600px) {/* change layout for mobile */
+                aside, section, article {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Header</h2>
+
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="form.html">Products</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="float.html">Float Page</a>
+            <a href="widthHeight.html">Width & Height</a>
+            <a href="position.html">Position</a>
+            <a href="combinators.html">Combinators</a>
+            <a href="pseudo_classes.html">Pseudo-Classes</a>
+            <a href="pagination.html">Pagination</a>
+            <a href="dropdownMenus.html">Drop-Down Menus</a>
+            <a href="navigationBar.html">Navigation Bar</a>
+            <a href="websiteLayout.html">Website Layout</a>
+            <a href="imageGallery.html">Image Gallery</a>
+            <a href="icons.html">Icons</a>
+            <a href="flexbox.html">Flexbox</a>
+            <a href="transformations.html">Transformations</a>
+        </header>
+
+        <nav class="navbar">
+
+        </nav>
+
+        <main>
+
+            <!-- 
+                semantic tags = keep your content organised
+                                better for Search Engine Optimisation 
+                                assists screen readers and other tech for accessibility
+
+                <header> = introductory content, logo
+                <nav>    = navigation bar, links
+                <main>   = main content (section, aside, article, div)
+                <section>= dependent content - normally only makes sense on current page
+                <aside>  = side content
+                <article>= independent content - makes sense on a different web page
+                <footer> = closing content
+            -->
+
+            <aside>
+                <h2>This is an aside</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque, accusantium reprehenderit tempore quia necessitatibus nihil tenetur ex fugit harum ab sapiente, in, corrupti quasi repudiandae! Maiores eos quam minus!</p>
+            </aside>
+
+
+            <section>
+                <h2>This is a section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque, accusantium reprehenderit tempore quia necessitatibus nihil tenetur ex fugit harum ab sapiente, in, corrupti quasi repudiandae! Maiores eos quam minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque, accusantium reprehenderit tempore quia necessitatibus nihil tenetur ex fugit harum ab sapiente, in, corrupti quasi repudiandae! Maiores eos quam minus!</p>
+            </section>
+
+
+            <article>
+                <h2>This is an article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque, accusantium reprehenderit tempore quia necessitatibus nihil tenetur ex fugit harum ab sapiente, in, corrupti quasi repudiandae! Maiores eos quam minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque, accusantium reprehenderit tempore quia necessitatibus nihil tenetur ex fugit harum ab sapiente, in, corrupti quasi repudiandae! Maiores eos quam minus!</p>
+            </article>
+        </main>
+
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </body>
+</html>
