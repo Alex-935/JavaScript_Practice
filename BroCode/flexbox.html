@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="images/png" href="images/favicon re3.png">
-        <title>Image Gallery</title>
+        <link rel="icon" type="icon" href="images/favicon re3.png">
+        <title>Flexbox</title>
         <style>
             body {
                 margin: 0px;
@@ -10,59 +10,37 @@
             }
             h1 {
                 margin: 0px;
-                padding: 10px 0px;
+                padding: 10px;
+                background-color: lightblue;
             }
             .navbar ul {
-                text-align: center;
-                background-color: rgb(75, 72, 72);
-                overflow: hidden;
                 list-style-type: none;
-                padding: 0px;
+                overflow: hidden;
                 margin: 0px;
+                background-color: rgb(24, 108, 233);
+                text-align: center;
             }
             .navbar li {
                 float: left;
             }
             .navbar a {
                 display: block;
-                color: white;
                 text-decoration: none;
+                color: black;
                 padding: 10px;
                 text-align: center;
             }
             .navbar a:hover {
-                background-color: darkred;
-                border: 2px solid white;
+                background-color: lightblue;
+                border: 2px solid black;
                 padding: 8px;
-            }
-
-
-            .gallery {
-                display:inline-block;
-                border: 1px solid black;
-                margin: 15px;
-                width: 350px;
-            }
-            .gallery .description {
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                padding: 10px;
-            }
-            .gallery:hover {
-                border-color: rgb(197, 197, 223);
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            }
-            .gallery img {
-                width: 100%;
-                height: auto;
             }
         </style>
     </head>
     <body>
-        <header style="background-color: rgb(170, 169, 172)">
-            <h1>Welcome to Bro Code</h1>
+        <header>
+            <h1>Flex Bros</h1>
         </header>
-
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -87,26 +65,7 @@
         </nav>
 
         <main>
-            <div class="gallery">
-                <a target="_blank" href="images/Leon RE4.png"><!-- Opens image in new tab when image is clicked on -->
-                    <img src="images/Leon RE4.png" alt="Leon S. Kennedy from Resident Evil 4">
-                </a>
-                <div class="description">Leon S. Kennedy</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="images/Ada Wong RE4.png"><!-- Opens image in new tab when image is clicked on -->
-                    <img src="images/Ada Wong RE4.png" alt="Ada Wong from Resident Evil 4">
-                </a>
-                <div class="description">Ada Wong</div><!-- Not bad, Leon -->
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="images/Luis Serra RE4.png"><!-- Opens image in new tab when image is clicked on -->
-                    <img src="images/Luis Serra RE4.png" alt="Luis Serra from Resident Evil 4">
-                </a>
-                <div class="description">Luis Serra</div>
-            </div>
+            
         </main>
 
         <footer style="background-color: rgb(170, 169, 172)">

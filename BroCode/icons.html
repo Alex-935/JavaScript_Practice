@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="images/png" href="images/favicon re3.png">
-        <title>Image Gallery</title>
+        <link rel="icon" type="image/png" href="images/favicon re3.png">
+        <title>Icons</title>
         <style>
             body {
-                margin: 0px;
+                margin: 0;
                 padding: 0px;
             }
             h1 {
-                margin: 0px;
-                padding: 10px 0px;
+                background-color: rgb(184, 175, 175);
+                margin: 0;
+                padding: 10px;
             }
             .navbar ul {
-                text-align: center;
-                background-color: rgb(75, 72, 72);
-                overflow: hidden;
                 list-style-type: none;
-                padding: 0px;
                 margin: 0px;
+                overflow: hidden;
+                background-color: rgb(75, 69, 69);
             }
             .navbar li {
-                float: left;
+                float: left;   
             }
             .navbar a {
                 display: block;
-                color: white;
+                color: whitesmoke;
                 text-decoration: none;
-                padding: 10px;
+                padding: 5px 10px;
+                margin: 5px 0px;
                 text-align: center;
             }
             .navbar a:hover {
                 background-color: darkred;
-                border: 2px solid white;
-                padding: 8px;
+                border: 1px solid white;
+                padding: 4px 9px;
             }
 
-
-            .gallery {
-                display:inline-block;
-                border: 1px solid black;
-                margin: 15px;
-                width: 350px;
-            }
-            .gallery .description {
-                font-family: Arial, Helvetica, sans-serif;
+            .icons {
                 text-align: center;
-                padding: 10px;
+                margin-right: 20px;
             }
-            .gallery:hover {
-                border-color: rgb(197, 197, 223);
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            .icons a {
+                text-decoration: none;
             }
-            .gallery img {
-                width: 100%;
-                height: auto;
+            .fa-solid.fa-house.fa-5x {
+                color: rgb(58, 54, 54);
+            }
+            .fa-solid.fa-house.fa-5x:hover {
+                color: rgb(218, 67, 218);
+                cursor: pointer;
             }
         </style>
+        <script src="https://kit.fontawesome.com/dd1e4585c4.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header style="background-color: rgb(170, 169, 172)">
-            <h1>Welcome to Bro Code</h1>
+        <header>
+            <h1>Bro Code</h1>
         </header>
-
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -86,26 +80,12 @@
             </ul>
         </nav>
 
+
         <main>
-            <div class="gallery">
-                <a target="_blank" href="images/Leon RE4.png"><!-- Opens image in new tab when image is clicked on -->
-                    <img src="images/Leon RE4.png" alt="Leon S. Kennedy from Resident Evil 4">
-                </a>
-                <div class="description">Leon S. Kennedy</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="images/Ada Wong RE4.png"><!-- Opens image in new tab when image is clicked on -->
-                    <img src="images/Ada Wong RE4.png" alt="Ada Wong from Resident Evil 4">
-                </a>
-                <div class="description">Ada Wong</div><!-- Not bad, Leon -->
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="images/Luis Serra RE4.png"><!-- Opens image in new tab when image is clicked on -->
-                    <img src="images/Luis Serra RE4.png" alt="Luis Serra from Resident Evil 4">
-                </a>
-                <div class="description">Luis Serra</div>
+            <div class="icons">
+                <a href="index.html"><i class="fa-solid fa-house fa-5x"></i></a>
+                <i class="fa-solid fa-dove fa-3x" style="color: rgb(158, 214, 26)"></i>
+                <i class="fa-solid fa-thumbs-up fa-4x" style="color: lightblue"></i>
             </div>
         </main>
 
