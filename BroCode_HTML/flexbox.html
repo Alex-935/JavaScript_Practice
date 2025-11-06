@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="icon" href="images/favicon re3.png">
+        <title>Flexbox</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+            h1 {
+                margin: 0px;
+                padding: 10px;
+                background-color: lightblue;
+            }
+            .navbar ul {
+                list-style-type: none;
+                overflow: hidden;
+                margin: 0px;
+                background-color: rgb(24, 108, 233);
+                text-align: center;
+            }
+            .navbar li {
+                float: left;
+            }
+            .navbar a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                text-align: center;
+            }
+            .navbar a:hover {
+                background-color: lightblue;
+                border: 2px solid black;
+                padding: 8px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;/* horizontal axis*/
+                border: 5px solid black;
+            }
+            .container2 {
+                display: flex;
+                justify-content: flex-end;/* horizontal axis*/
+                border: 5px solid black;
+            }
+            .container3 {
+                display: flex;
+                justify-content: space-between;/* horizontal axis*/
+                border: 5px solid black;
+            }
+            .container4 {
+                display: flex;
+                justify-content: space-around;/* horizontal axis*/
+                border: 5px solid black;
+            }
+            .container5 {
+                display: flex;
+                justify-content: space-evenly;/* horizontal axis*/
+                border: 5px solid black;
+            }
+            .container6 {
+                display: flex;
+                align-items: flex-end;/* vertical axis*/
+                border: 5px solid black;
+                height: 40vh;
+            }
+            .container7 {
+                display: flex;
+                align-items: baseline;/* vertical axis, text is on the same line */
+                border: 5px solid black;
+                height: 40vh;
+            }
+            .container8 {
+                display: flex;
+                border: 5px solid black;
+                height: 80vh;
+                flex-wrap: wrap;
+            }
+            .container9 {
+                display: flex;
+                border: 5px solid black;
+                height: 80vh;
+
+                flex-wrap: wrap;
+                align-content: flex-start;
+                column-gap: 1em;
+                row-gap: 1em;
+            }
+            .box {
+                width: 150px;
+                height: 150px;
+                font-size: 8em;
+                text-align: center;
+                border-radius: 10px;
+            }
+            #box1 {
+                background-color: red;
+                /*
+                align-self: center;
+                align-self: start, center, end;
+                order: -1; places at beginning
+                */
+            }
+            #box2 {
+                background-color: yellow;
+            }
+            #box3 {
+                background-color: rgb(48, 180, 48);
+            }
+            #box4{
+                background-color: rgb(18, 134, 211);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Flex Bros</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="form.html">Products</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="float.html">Float Page</a></li>
+                <li><a href="widthHeight.html">Width & Height</a></li>
+                <li><a href="position.html">Position</a></li>
+                <li><a href="combinators.html">Combinators</a></li>
+                <li><a href="pseudo_classes.html">Pseudo-Classes</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="dropdownMenus.html">Drop-Down Menus</a></li>
+                <li><a href="navigationBar.html">Navigation Bar</a></li>
+                <li><a href="navigationBarVertical.html">Navigation Bar Vertical</a></li>
+                <li><a href="websiteLayout.html">Website Layout</a></li>
+                <li><a href="imageGallery.html">Image Gallery</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="flexbox.html">Flexbox</a></li>
+                <li><a href="transformations.html">Transformations</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div class="container">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container2">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container3">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container4">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container5">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container6">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container7">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container8">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+
+            <div class="container9">
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+            </div>
+        
+        </main>
+
+        <footer style="background-color: rgb(170, 169, 172)">
+            <hr>
+            Author: Alex<br>
+            &copy; Copyright reserved<br>
+            <a href="mailto:fake@fake.com">BroCode@fake.com</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/favicon re3.png">
+        <title>Animations</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            h1 {
+                margin: 0px;
+                padding: 10px 0px;
+                background-color: rgb(120, 240, 109);
+                text-align: center;
+            }
+            .navbar ul {
+                border-top: 1px solid black;
+                margin: 0px;
+                padding: 10px 0px;
+                background-color: rgb(120, 240, 109);
+                list-style-type: none;
+                overflow: hidden;
+            }
+            .navbar li { 
+                float: left;
+            }
+            .navbar a {
+                display: block;
+                color: black;
+                text-decoration: none;
+                padding: 10px 8px;
+                width: 100px;
+                height: 33px;
+                text-align: center;
+            }
+            .navbar a:hover {
+                background-color: rgb(241, 106, 106);
+                border: 3px solid darkgreen;
+                padding: 7px 5px;
+            }
+
+            #box {
+                width: 250px;
+                height: 250px;
+                background-color: red;
+                font-size: 13em;
+                text-align: center;
+                animation-name: colorChange;
+                animation-duration: 5s;
+                direction: reverse;
+                
+                /*
+                animation-name: fadeIn;
+                opacity: 0;*/    
+            }
+            #box:hover {
+                animation-name: glow;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes slideLeft {
+                from{transform: translateX(200%);}/* 100% is the width of the object */
+            }
+            @keyframes slideRight {
+                to{transform: translateX(200%);}/* 100% is the width of the object */
+            }
+            @keyframes slideUp {
+                from{transform: scale(200%) translateY(50px);}
+            }
+            @keyframes rotate {
+                50%{transform: translateX(300%) scale(300%) rotate(3600deg);}/* complete the animation in half duration length
+                                                    and then return to normal with the rest of the time*/
+            }
+            @keyframes fade {
+                50%{opacity: 0}
+            }
+            @keyframes fadeIn {
+                100%{opacity: 1}
+            }
+            @keyframes colorChange {
+                0%{background-color: red;}
+                20%{background-color: orange;}
+                40%{background-color: yellow;}
+                60%{background-color: lightgreen;}
+                80%{background-color: lightblue;}
+                100%{background-color: mediumpurple;}
+            }
+            @keyframes glow {
+                50%{box-shadow: 0px 0px 50px blue;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Ani Bros</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="form.html">Products</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="float.html">Float Page</a></li>
+                <li><a href="widthHeight.html">Width & Height</a></li>
+                <li><a href="position.html">Position</a></li>
+                <li><a href="combinators.html">Combinators</a></li>
+                <li><a href="pseudo_classes.html">Pseudo-Classes</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="dropdownMenus.html">Drop-Down Menus</a></li>
+                <li><a href="navigationBar.html">Navigation Bar</a></li>
+                <li><a href="navigationBarVertical.html">Navigation Bar Vertical</a></li>
+                <li><a href="websiteLayout.html">Website Layout</a></li>
+                <li><a href="imageGallery.html">Image Gallery</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="flexbox.html">Flexbox</a></li>
+                <li><a href="transformations.html">Transformations</a></li>
+                <li><a href="animations.html">Animations</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="box">Hi</div>
+        </main>
+
+        <footer style="background-color: rgb(170, 169, 172)">
+            <hr>
+            Author: Alex<br>
+            &copy; Copyright reserved<br>
+            <a href="mailto:fake@fake.com">BroCode@fake.com</a>
+        </footer>
+    </body>
+</html>
