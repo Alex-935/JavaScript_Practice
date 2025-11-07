@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devive-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/favicon re3.png">
+        <title>User Info</title>
+        <link rel="stylesheet" href="userInfo.css">
+    </head>
+    <body>
+        <header>
+            <h1>User Info</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="userInfo.html">User Info</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div class="inputForm">
+                <div class="inputElement">
+                    <label>Username: </label>
+                    <input id="usernameTextbox">
+                </div>
+
+                <div class="inputElement">
+                    <label>Age: </label>
+                    <input id="ageTextbox">
+                </div>
+
+                <button id="submitButton">Submit</button>
+            </div>
+
+            <div class="outputForm">
+                <p id="usernameOutput"></p>
+                <p id="ageOutput"></p>
+            </div>
+
+            <div class="counter">
+                <label id="counterLabel">0</label>
+                <br>
+                <button id="counterDecrease">Decrease</button>
+                <button id="counterReset">Reset</button>
+                <button id="counterIncrease">Increase</button>
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        <script src="userInfo.js"></script>
+    </body>
+</html>
