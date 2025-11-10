@@ -23,14 +23,17 @@ submitGuess.onclick = function() {
     
     //guess needs to be higher or lower
     if (currentGuess == numberToGuess) {
+        guessIndicator.style.color = "black";
         guessIndicator.textContent = `Congratulations, the number was ${numberToGuess}!`;
         numGuesses.textContent = `You guessed the number in ${guesses} guesses!`;
     }
     else if (currentGuess > numberToGuess) {
+        guessIndicator.style.color = "red";
         guessIndicator.textContent = `Lower than ${currentGuess}!`;
         numGuesses.textContent = `Guesses: ${guesses}`;
     }
     else {
+        guessIndicator.style.color = "green";
         guessIndicator.textContent = `Higher than ${currentGuess}!`;
         numGuesses.textContent = `Guesses: ${guesses}`;
     }
