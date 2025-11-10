@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/png" href="images/favicon re3.png">
+        <title>Number Guesser</title>
+        <link rel="stylesheet" href="numberGuesser.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <header>
-            <h1 id="headerH1">Home Page</h1>
+            <h1>Number Guesser</h1>
         </header>
         <nav class="navbar">
             <ul>
@@ -23,14 +23,23 @@
         </nav>
 
         <main>
+          
+            <div class="guessingGame">
+                <label>Guess a number between 0 and 100:</label>
+                <label id="guessIndicator"></label>
+                <label id="numGuesses">Guesses: 0</label>
 
-
+                <input id="enterGuess" type="text" placeholder="Enter a number:">
+                <br>
+                <button id="submitGuess">Submit</button>
+                <button id="resetGuess">Reset</button>
+            </div>
 
         </main>
 
         <footer>
 
         </footer>
-        <script src="index.js"></script>
+        <script src="numberGuesser.js"></script>
     </body>
 </html>
