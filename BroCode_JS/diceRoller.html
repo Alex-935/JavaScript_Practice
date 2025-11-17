@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Selection</title>
-        <link rel="stylesheet" href="selection.css">
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="diceRoller.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <h1>Selection</h1>
+            <h1>Dice Roller</h1>
         </header>
         <nav class="navbar">
             <ul>
@@ -28,26 +28,27 @@
         </nav>
 
         <main>
-            <input type="checkbox" id="myCheckbox">
-            <label for="myCheckbox">Resident Evil</label><br>
-            <br>
 
-            <input type="radio" id="weskerButton" name="re4" checked="checked">
-            <label for="visaButton">Wesker</label><br>
-            <input type="radio" id="adaButton" name="re4">
-            <label for="visaButton">Ada</label><br>
-            <input type="radio" id="jillButton" name="re4">
-            <label for="visaButton">Jill</label><br>
+            <div id="diceRoller">
+                <h1 id="diceTitle">Dice Roller</h1>
+                <label># of dice:</label>
+                <input type="number" min="1" id="numDice">
+                <button type="button" id="rollButton">Roll Dice</button>
 
-            <button type="submit" id="mySubmit">Submit</button>
+                <br>
+                <label id="highRoller">What will you get High Roller?</label>
 
-            <p id="checkboxResult"></p>
-            <p id="radioResult"></p>
+                <div id="diceResult"></div>
+                <div id="diceImages">
+
+                </div>
+            </div>
+
         </main>
 
         <footer>
 
         </footer>
-        <script src="selection.js"></script>
+        <script src="diceRoller.js"></script>
     </body>
 </html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+header {
+    background-color: rgb(216, 207, 207);
+    padding: 20px 15px;
+}
+h1 {
+    margin: 0px;
+}
+/* Navbar */
+.navbar ul {
+    margin: 0px;
+    padding: 10px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+.navbar li {
+    float: left;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: black;
+    /*transition: 0.3s;*/
+}
+.navbar a:hover {
+    padding: 8px 13px;
+    border: 2px solid white;
+    background-color: rgb(92, 17, 17);
+}
+
+main {
+    background-image: url(images/Rouge\ Flipping\ Coin\ Official.png);
+    background-repeat: none;
+    background-position: center;
+    
+    background-size: cover;
+    height: 1500px;
+    color: white;
+}
+#diceRoller {
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+}
+#diceTitle {
+    margin-bottom: 10px;
+}
+#diceResult {
+    margin: 10px;
+}
+#diceImages img {
+    width: 150px;
+    margin: 5px;
+    border-radius: 15px;
+}
+#highRoller {
+    font-style: italic;
+    display: block;
+    margin-top: 10px;
+}
+
+/* change layout for mobile */
+@media screen and (max-hight:1000px) {
+    main {
+        height: 50%;
+        background-position: bottom;
+    }
+}

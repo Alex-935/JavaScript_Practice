@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+header {
+    background-color: rgb(216, 207, 207);
+    padding: 20px 15px;
+}
+h1 {
+    margin: 0px;
+}
+/* Navbar */
+.navbar ul {
+    margin: 0px;
+    padding: 10px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+.navbar li {
+    float: left;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: black;
+    /*transition: 0.3s;*/
+}
+.navbar a:hover {
+    padding: 8px 13px;
+    border: 2px solid white;
+    background-color: rgb(92, 17, 17);
+}
+
