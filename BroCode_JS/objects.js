@@ -398,3 +398,144 @@ console.log(fruitNames);
             sorts elements as strings in lexicographic order, not alphabetical
             lexicographic = (alphabet, numbers, symbols) as strings
 */
+
+let numbers = [1, 7, 4, 8, 3, 5, 2, 9, 10, 6];
+numbers.sort();
+
+console.log(numbers);// [1, 10, 2, 3, 4, 5, 6, 7, 8, 9];
+//each item is treated as a string.
+// lexicographically 10 comes before 2 because it starts with 1
+
+numbers.sort((a, b) => a - b );// array sorted by returned value so now numbers in order
+// use b - a for reverse order
+console.log(numbers);
+
+const people = [{name: "Spongebob", age: 30, gpa: 3.0},
+                {name: "Patrick", age: 37, gpa: 1.5},
+                {name: "Squidward", age: 51, gpa: 2.5},
+                {name: "Sandy", age: 27, gpa: 4.0}];
+
+people.sort((a, b) => {
+    return a.age - b.age;
+});  
+console.log(people);
+
+people.sort((a, b) => a.name.localeCompare(b.name));//localeCompare compares lexicographically
+console.log(people);
+
+
+// Shuffle and array
+const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
+
+//cards.sort(() => Math.random() - 0.5);
+//this is not a good way to shuffle as the shuffle isnt uniform and very inefficient for large arrays
+
+shuffle(cards);
+//Fisher-Yates Algorithm
+function shuffle(array) {
+    for (let i = array.length -1; i > 0; i--) {
+        const random = Math.floor(Math.random() * (i + 1));
+
+        [array[i], array[random]] = [array[random], array[i]];
+    }
+}
+console.log(cards);
+
+
+
+// Date Objects
+const date = new Date();
+console.log(date);
+// Constructor: Date(year, month, day, hour, minute, second, ms)
+const myDate = new Date(2024, 0, 1, 2, 3, 4, 5);
+// = new Date("2024-01-02T12:00:00Z");
+// = new Date(0); you can enter an amount of milliseconds sinse a preset date (the epic date);
+console.log(myDate);
+
+const year = date.getFullYear();//2025
+//.getMonth(), day = date.getDate();, .getHours(), .getMinutes(), .getSeconds(), .getDay();
+// getDate() gives the day number, .getDay gives weekday e.g Mon
+
+//to set a time, replace above methods with se3t instead of get. .setFullYear() etc
+
+if (date > myDate) {
+    console.log("As Expected");
+}
+
+
+
+
+// closure = a function defined inside of another function,
+//           the inner function has access to the variables 
+//           and scope of the outer function.
+//           Allows for private variables and state maintenance
+//           Used frequently in JS frameworks: React, Vue and Angular
+
+function outer() {
+
+    let message = "Hello";
+
+    function inner() {
+        console.log(message);
+    }
+
+    inner();
+}
+outer();
+//this keeps message private as its in the outer scope
+
+function oldIncrement() {
+    let count = 0;
+    count++;
+    console.log(`Count increased to ${count}`);
+}
+//if we called oldIncrement, it would never go beyond 1 as count is reset every time
+
+
+function createCounter() {
+
+    let count = 0;
+
+    function increment() {
+        count++;
+        console.log(`Count increased to ${count}`);
+    }
+
+    function getCount() {
+        return count;
+    }
+
+    return {
+        increment,// returns an object with a method of increment
+        getCount
+    };
+}
+
+const counter = createCounter();
+counter.increment();
+counter.increment();
+// count is maintained across uses of increment
+// counter.count is undefined so it cannot have its valuse changed outside of increment
+console.log(counter.getCount());
+
+function createGame() {
+    let score = 0;
+    function increaseScore(points) {
+        score += points;
+        console.log(`+${points}pts`);
+    }
+    function decreaseScore(points) {
+        score -= points;
+        console.log(`-${points}pts`);
+    }
+    function getScore() {
+        return score;
+    }
+
+    return {increaseScore, decreaseScore, getScore};
+}
+const game = createGame();
+game.increaseScore(10);
+console.log(game.getScore());
+
+
