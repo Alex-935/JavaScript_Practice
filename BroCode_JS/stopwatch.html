@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="index.css">
+        <title>Stopwatch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=display-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stopwatch.css">
     </head>
     <body>
         <header>
-            <h1 id="headerH1">Home Page</h1>
+            <h1>Stopwatch</h1>
         </header>
         <nav class="navbar">
             <ul>
@@ -29,15 +29,28 @@
             </ul>
         </nav>
 
+
         <main>
 
+            <h1 id="stopwatchTitle">Stopwatch</h1>
 
+            <div id="stopwatchContainer">
+                <div id="stopwatchDisplay">
+                    00:00:00:00
+                </div>
+                <div id="stopwatchControls">
+                    <button id="startBtn" onclick="startStopwatch()">Start</button>
+                    <button id="stopBtn" onclick="stopStopwatch()">Stop</button>
+                    <button id="resetBtn" onclick="resetStopwatch()">Reset</button>
+                </div>
+            </div>
 
         </main>
+
 
         <footer>
 
         </footer>
-        <script src="index.js"></script>
+        <script src="stopwatch.js"></script>
     </body>
 </html>

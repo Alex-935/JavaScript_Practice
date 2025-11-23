@@ -539,3 +539,21 @@ game.increaseScore(10);
 console.log(game.getScore());
 
 
+
+// setTimeout() = function in JavaScript that allows you to schedule the execution
+//                of a function after an amount of time (milliseconds)
+//                Times are approximate (varies based on workload of the runtime env.)
+// aetTimeout(callback, delay);
+
+const timeoutId = setTimeout(() => {window.alert("Hello")}, 3000);
+clearTimeout(timeoutId);
+
+let myTimeoutId;
+function startTimer() {
+    myTimeoutId = setTimeout(() => {window.alert("Hi")}, 3000);
+}
+
+function clearTimer() {
+    clearTimeout(myTimeoutId);
+}
+
