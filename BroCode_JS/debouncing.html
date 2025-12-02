@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Key Events</title>
-        <link rel="stylesheet" href="keyEvents.css">
+        <title>Debouncing</title>
+        <link rel="stylesheet" href="debouncing.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <h1>Key Events</h1>
+            <h1></h1>
         </header>
         <nav class="navbar">
             <ul>
@@ -41,16 +41,44 @@
 
         <main>
 
-            <div id="myBox">
-                😀
+
+            <input type="text">
+            
+            <div>
+                <b>Default:</b>
+                <span id="default"></span>
             </div>
 
+            <div>
+                <b>Debounce:</b>
+                <span id="debounce"></span>
+            </div>
+
+            <div>
+                <b>Throttle:</b>
+                <span id="throttle"></span>
+            </div>
+
+            <div>
+                <b>Mouse Move Count:</b>
+                <span id="mouseCount"></span>
+            </div>
+
+            <div>
+                <b>Mouse Move Count Debounced:</b>
+                <span id="mouseCountDebounced"></span>
+            </div>
+
+            <div>
+                <b>Mouse Move Count Throttled:</b>
+                <span id="mouseCountThrottled"></span>
+            </div>
         </main>
 
 
         <footer>
 
         </footer>
-        <script src="keyEvents.js"></script>
+        <script src="debouncing.js"></script>
     </body>
 </html>

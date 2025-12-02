@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <link rel="icon" type="image/png" href="images/favicon re3.png">
-        <title>Key Events</title>
-        <link rel="stylesheet" href="keyEvents.css">
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" href="rockPaperScissors.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <h1>Key Events</h1>
+            <h1>Rock, Paper, Scissors</h1>
         </header>
         <nav class="navbar">
             <ul>
@@ -34,23 +34,43 @@
                 <li><a href="mouseEvents.html">Mouse Events</a></li>
                 <li><a href="keyEvents.html">Key Events</a></li>
                 <li><a href="debouncing.html">Debouncing</a></li>
-                <li><a href="throttling.html">Throttling</a></li>
+                <li><a href="nodeList.html">Node List</a></li>
+                <li><a href="classList.html">Class List</a></li>
+                <li><a href="rockPaperScissors.html">Rock, Paper, Scissors</a></li>
             </ul>
         </nav>
 
-
         <main>
 
-            <div id="myBox">
-                😀
+            <h1 id="rpsTitle">Rock, Paper, Scissors</h1>
+
+            <div id="optionButtonDiv">
+                <button class="optionButton" id="rock">✊</button>
+                <button class="optionButton" id="paper">✋</button>
+                <button class="optionButton" id="scissors">✌️</button>
             </div>
 
-        </main>
+            <div id="rpsChoices" class="textSection">
+                <span id="playerChoiceText">Player Choice:</span>
+                <br>
+                <span id="compChoiceText">Computer Choice:</span>
+            </div>
 
+            <h1 id="gameOutcome" class="textSection"></h1>
+
+            <div id="rpsScore" class="textSection">
+                <span id="playerScoreText">Player Score: 0</span>
+                <br>
+                <span id="compScoreText">Computer Score: 0</span>
+            </div>
+
+            <button id="resetButton">Reset Score</button>
+
+        </main>
 
         <footer>
 
         </footer>
-        <script src="keyEvents.js"></script>
+        <script src="rockPaperScissors.js"></script>
     </body>
 </html>

@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+header {
+    background-color: rgb(216, 207, 207);
+    padding: 20px 15px;
+}
+h1 {
+    margin: 0px;
+}
+
+
+/* Navbar */
+.navbar ul {
+    margin: 0px;
+    padding: 10px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+.navbar li {
+    float: left;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: black;
+    /*transition: 0.3s;*/
+}
+.navbar a:hover {
+    padding: 8px 13px;
+    border: 2px solid white;
+    background-color: rgb(92, 17, 17);
+}
+
+main {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* H1 Title above buttons*/
+#rpsTitle {
+
+}
+
+/* RPS Buttons */
+#optionButtonDiv {
+    margin: 20px;
+    text-align: center;
+}
+.optionButton {
+    text-align: center;
+    font-size: 10rem;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5000px;
+    width: 220px;
+    height: 220px;
+    padding: 0px;
+}
+
+/* Text */
+.textSection {
+    margin: 15px;
+}
+#rpsChoices {
+
+}
+#gameOutcome {
+
+}
+#rpsScore {
+
+}
+
+/* Reset Button */
+#resetButton {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
