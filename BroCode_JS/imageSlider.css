@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+header {
+    background-color: rgb(216, 207, 207);
+    padding: 20px 15px;
+}
+h1 {
+    margin: 0px;
+}
+
+/* Navbar */
+.navbar ul {
+    margin: 0px;
+    padding: 10px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+.navbar li {
+    float: left;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: black;
+    /*transition: 0.3s;*/
+}
+.navbar a:hover {
+    padding: 8px 13px;
+    border: 2px solid white;
+    background-color: rgb(92, 17, 17);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* set buttons to left and right of screen */
+.previous {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
